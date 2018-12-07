@@ -1,8 +1,11 @@
-This is a face recognition App. it uses Clarifai API.
+## Face Recognition App
+
+Built with React.
+
+It uses Clarifai API for face recognition. https://clarifai.com/models
+
+When finished – will have Frontend, Backend, Database, and deployed on Heroku.
 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
