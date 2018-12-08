@@ -31,6 +31,7 @@ class App extends Component {
   constructor() {
     super();
       this.state = {
+<<<<<<< HEAD
         input: '',
         imageUrl: ''
       }
@@ -55,6 +56,14 @@ class App extends Component {
         // there was an error
       }
   );
+=======
+        input: ''
+      }
+  }
+
+  onInputChange = (event) => {
+
+>>>>>>> steps forward onInputChange()
   }
 
   render() {
@@ -67,6 +76,7 @@ class App extends Component {
         <Logo />
         <Rank />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <ImageLinkForm 
           onInputChange={this.onInputChange} 
           onButtonSubmit={this.onButtonSubmit}
@@ -74,6 +84,9 @@ class App extends Component {
 =======
         <ImageLinkForm />
 >>>>>>> continued ImageLinkForm, Rank + Particles
+=======
+        <ImageLinkForm onInputChange={this.onInputChange}/>
+>>>>>>> steps forward onInputChange()
         <FaceRecognition /> 
       </div>
     );
