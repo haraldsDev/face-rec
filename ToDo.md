@@ -11,5 +11,7 @@ git am --show-current-patch				// at this point different versions are visible i
 
 git rebase --continue
 
+git rebase --skip					// to skip some step in rebase process
+
 git rebase origin/master
 
