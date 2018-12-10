@@ -15,7 +15,3 @@ When finished Face Recognition App will have:
 – **Database**, in postgresQL
 
 – and deployed on **Heroku**.
-
-
-
-
