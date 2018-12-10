@@ -6,7 +6,7 @@ import ImageLinkForm from './Components/ImageLinkForm/ImageLinkForm';
 import FaceRecognition from './Components/FaceRecognition/FaceRecognition';
 import Rank from './Components/Rank/Rank';
 import Particles from 'react-particles-js';
-import Clarifai from 'clarifai';
+import Clarifai from 'clarifai'; 
 
 const app = new Clarifai.App({
  apiKey: '66c26976e675482eaa843e8fc6b634ca'
