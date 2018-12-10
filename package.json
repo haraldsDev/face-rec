@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "clarifai": "^2.9.0", 
+=======
+    "clarifai": "^2.9.0",
+>>>>>>> imported Clarifai, continued FaceRecognition Component
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-particles-js": "^2.4.2",
