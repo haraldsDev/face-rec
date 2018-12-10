@@ -6,14 +6,11 @@ import ImageLinkForm from './Components/ImageLinkForm/ImageLinkForm';
 import FaceRecognition from './Components/FaceRecognition/FaceRecognition';
 import Rank from './Components/Rank/Rank';
 import Particles from 'react-particles-js';
-<<<<<<< HEAD
 import Clarifai from 'clarifai';
 
 const app = new Clarifai.App({
  apiKey: '66c26976e675482eaa843e8fc6b634ca'
 });
-=======
->>>>>>> continued ImageLinkForm, Rank + Particles
 
 const particlesOptions = {
   particles: {
@@ -31,7 +28,6 @@ class App extends Component {
   constructor() {
     super();
       this.state = {
-<<<<<<< HEAD
         input: '',
         imageUrl: ''
       }
@@ -56,14 +52,6 @@ class App extends Component {
         // there was an error
       }
   );
-=======
-        input: ''
-      }
-  }
-
-  onInputChange = (event) => {
-
->>>>>>> steps forward onInputChange()
   }
 
   render() {
@@ -75,18 +63,10 @@ class App extends Component {
         <Navigation />
         <Logo />
         <Rank />
-<<<<<<< HEAD
-<<<<<<< HEAD
         <ImageLinkForm 
           onInputChange={this.onInputChange} 
           onButtonSubmit={this.onButtonSubmit}
         />
-=======
-        <ImageLinkForm />
->>>>>>> continued ImageLinkForm, Rank + Particles
-=======
-        <ImageLinkForm onInputChange={this.onInputChange}/>
->>>>>>> steps forward onInputChange()
         <FaceRecognition /> 
       </div>
     );
