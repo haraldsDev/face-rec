@@ -7,11 +7,15 @@ solve base64 problem for images
 
 // git merge conflict resolve
 
-git am --show-current-patch				// at this point different versions are visible in Sublime..
+git rebase origin/master
 
 git rebase --continue
 
+git am --show-current-patch				// at this point different versions are visible in Sublime for editing
+
+add . 'src/App.js'					//when finished editing - to stage the changes
+
 git rebase --skip					// to skip some step in rebase process
 
-git rebase origin/master
+
 
