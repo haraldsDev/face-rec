@@ -31,11 +31,14 @@ class App extends Component {
       this.state = {
         input: '',
         imageUrl: '',
-        box: {}
+        box: {},
+        route: 'SignIn'
       }
   }
 
-
+  onRouteChange = (route) => {
+    this.setState({ route: route });
+  }
 
   onInputChange = (event) => { 
     this.setState({input: event.target.value}); 
@@ -74,15 +77,25 @@ class App extends Component {
         <Particles className="particles"
           params={particlesOptions}
         />
-        <Navigation />
-        <Logo />
-        <SignIn />
-        <Rank />
-        <ImageLinkForm 
-          onInputChange={this.onInputChange} 
-          onButtonSubmit={this.onButtonSubmit}
+        <Navigation 
+          onRouteChange={this.onRouteChange}
         />
-        <FaceRecognition imageUrl={this.state.imageUrl} box={this.state.box} />
+        <Logo />
+
+        { this.state.route === 'SignIn' ?
+          <SignIn 
+            onRouteChange={this.onRouteChange}
+          /> 
+          :
+          <div>
+            <Rank />
+            <ImageLinkForm 
+              onInputChange={this.onInputChange} 
+              onButtonSubmit={this.onButtonSubmit}
+            />
+            <FaceRecognition imageUrl={this.state.imageUrl} box={this.state.box} />
+          </div>
+        }
 
       </div>
     );
