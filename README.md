@@ -2,7 +2,7 @@
 
 Built with React. When finished, Face Recognition App will have:
 
-![Completed][Completed] – **Frontend**, built in React
+– **Frontend**, built in React
 
 – **Backend**, built in node.js & express.js
 
