@@ -16,7 +16,7 @@ const app = new Clarifai.App({
 
 const particlesOptions = {
   particles: {
-    number: {
+    number: { 
       value: 30,
       density: {
         enable: true,
@@ -40,8 +40,8 @@ class App extends Component {
 
   onRouteChange = (route) => {
     if (route === 'Signout') {
-      this.setState({ isSignedIn: false })
-    } else if (route === 'homepage') {
+      this.setState({ isSignedIn: false });
+    } else if (route === 'homepage') { 
       this.setState({ isSignedIn: true })
     }
     this.setState({ route: route });
