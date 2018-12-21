@@ -19,8 +19,20 @@ class SignIn extends Component {
 	}
 
 	onSubmitSignIn = () => {
-		this.props.onRouteChange('homepage')
-		console.log(this.state);
+		fetch('http://localhost:3030/signin', {
+			method: 'post',
+			headers: {'Content-Type': 'application/json'},
+			body: JSON.stringify({
+				email: this.state.signInEmail,
+				password: this.state.signInPassword
+			})
+		})
+		.then(response => response.json())
+		.then(data => {
+			if (data === 'success logging in') {
+				this.props.onRouteChange('homepage');
+			}
+		})
 	}
 
 	render() {
@@ -33,11 +45,23 @@ class SignIn extends Component {
 				      <legend className="f4 fw6 ph0 mh0">Sign In</legend>
 				      <div className="mt3">
 				        <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
-				        <input className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="email" name="email-address"  id="email-address"/>
+				        <input 
+				        	className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+				        	type="email" 
+				        	name="email-address"  
+				        	id="email-address"
+				        	onChange={this.onEmailChange}
+				        />
 				      </div>
 				      <div className="mv3">
 				        <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
-				        <input className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password"  id="password"/>
+				        <input 
+				        	className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
+				        	type="password" 
+				        	name="password"  
+				        	id="password"
+				        	onChange={this.onPasswordChange}
+				        />
 				      </div>
 				    </fieldset>
 					    <div className="">
