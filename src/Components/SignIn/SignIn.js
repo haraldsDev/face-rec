@@ -18,7 +18,7 @@ class SignIn extends Component {
 		this.setState({ signInPassword: event.target.value })
 	}
 
-	onSubmitSignIn = () => {
+	onSignInSubmit = () => {
 		fetch('http://localhost:3030/signin', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
@@ -28,10 +28,9 @@ class SignIn extends Component {
 			})
 		})
 		.then(response => response.json())
-		.then(data => {
-			if (data === 'success logging in') {
-				this.props.onRouteChange('homepage');
-			}
+		.then(user => {
+			this.props.loadUser(user);
+			this.props.onRouteChange('homepage');
 		})
 	}
 
