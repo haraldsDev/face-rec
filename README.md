@@ -4,7 +4,7 @@ Built with React. When finished, Face Recognition App will have:
 
 – **Frontend**, built in React
 
-– **Backend**, built in node.js & express.js
+– **Backend**, built in node.js & express.js in other repo: https://github.com/haraldsDev/face-rec-backend
 
 – **Database**, in postgresQL
 
