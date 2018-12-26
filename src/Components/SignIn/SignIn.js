@@ -29,8 +29,10 @@ class SignIn extends Component {
 		})
 		.then(response => response.json())
 		.then(user => {
+			if (user.id) {
 			this.props.loadUser(user);
 			this.props.onRouteChange('homepage');
+			}
 		})
 	}
 
@@ -68,7 +70,7 @@ class SignIn extends Component {
 					      	className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f4 dib"
 					      	type="submit" 
 					      	value="Sign in"
-					      	onClick={this.onSubmitSignIn}
+					      	onClick={this.onSignInSubmit}
 					      />
 					    </div>
 					        <div className="lh-copy mt3">

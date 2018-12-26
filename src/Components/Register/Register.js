@@ -33,7 +33,7 @@ class Register extends Component {
 				password: this.state.registerPassword
 			})
 		})
-		.then(response => response.json())
+		.then(response => response.json()) 
 		.then(user => {
 			if (user.id) {
 				this.props.loadUser(user);
