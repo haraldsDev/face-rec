@@ -15,7 +15,7 @@ const particlesOptions = {
       value: 30,
       density: {
         enable: true,
-        value_area: 130
+        value_area: 130 
       }
     }
   }
@@ -25,7 +25,7 @@ const initialState = {
   input: '',
   imageUrl: '',
   box: {},
-  route: 'signin',
+  route: 'Register',
   isSignedIn: false,
   user: {
     id: '',

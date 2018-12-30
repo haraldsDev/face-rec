@@ -5,8 +5,7 @@ import lightning from './lightning.png';
 
 const Logo = () => {
 	return (
-		<div className='mh4 mt0'>
-
+		<div className='background mh4 mt3'>
 			<Tilt className="Tilt br2 shadow-2" options={{ max : 35 }} style={{ height: 180, width: 150 }} >
 			 	<div className="Tilt-inner pt3"> 
 			 		<img src={lightning} alt='logo'/> 
