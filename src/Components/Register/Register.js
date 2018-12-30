@@ -24,23 +24,30 @@ class Register extends Component {
 	}
 
 	onSubmitRegister = () => {
-		fetch('http://localhost:3030/register', {
-			method: 'post',
-			headers: {'Content-Type': 'application/json'},
-			body: JSON.stringify({
-				name: this.state.name,
-				email: this.state.registerEmail,
-				password: this.state.registerPassword
-			})
-		})
-		.then(response => response.json()) 
-		.then(user => {
-			if (user.id) {
-				this.props.loadUser(user);
-				this.props.onRouteChange('homepage');
-			}
-		})
-		
+		const emailCheckRegex = /\S+@\S+\.\S+/;
+		if ( this.state.registerEmail.length > 0 
+			 && !this.state.registerEmail.match(emailCheckRegex)) {
+				alert('wrong email form!');
+				//TODO display Tooltip – "wrong email form" instead of default 'alert'
+				this.setState({ registerEmail: '' });
+		} else {
+			fetch('http://localhost:3030/register', {
+					method: 'post',
+					headers: {'Content-Type': 'application/json'},
+					body: JSON.stringify({
+						name: this.state.name,
+						email: this.state.registerEmail,
+						password: this.state.registerPassword
+					})
+				})
+				.then(response => response.json()) 
+				.then(user => {
+					if (user.id) {
+						this.props.loadUser(user);
+						this.props.onRouteChange('homepage');
+					}
+				})
+		}
 	}
 	
 	render() {
