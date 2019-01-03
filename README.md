@@ -1,15 +1,15 @@
-## Face Recognition App
+## Face Recognition App – Frontend
 
-Built with React. When finished, Face Recognition App will have:
+Face App – an app which recognizes Faces in pictures, and highlights Faces with a frame. 
 
-– **Frontend**, built in React
+It uses Clarifai API for face recognition: https://clarifai.com/models.
 
-– **Backend**, built in node.js & express.js. Backend is located in another repo: https://github.com/haraldsDev/face-rec-backend
+– **Frontend**, built with React.
+
+– **Backend**, built with node.js & express.js. Backend code is located in another repo: https://github.com/haraldsDev/face-rec-backend
 
 – **Database**, in postgresQL
 
-– and deployed on **Heroku**.
-
-It uses Clarifai API for face recognition: https://clarifai.com/models.
+– and Face App deployed on **Heroku**: https://smart-young.herokuapp.com/
 
 Based on 'smart-brain' Project from Udemy course "The Complete Web Developer in 2018" by Andrei Neagoie https://www.udemy.com/the-complete-web-developer-zero-to-mastery/ 
