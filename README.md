@@ -10,4 +10,4 @@ Face App – recognizes Faces in pictures, and highlights Faces with a frame. Us
 
 [✅] –– and deployed on **Heroku**: https://smart-young.herokuapp.com/
 
-Based on 'smart-brain' Project from "The Complete Web Developer in 2018" by Andrei Neagoie https://www.udemy.com/the-complete-web-developer-zero-to-mastery/ 
+Based on 'smart-brain' by Andrei Neagoie https://www.udemy.com/the-complete-web-developer-zero-to-mastery/ 
