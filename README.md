@@ -6,7 +6,7 @@ It uses Clarifai API for face recognition: https://clarifai.com/models.
 
 [✅] –– **Frontend**, built with React.
 
-[✅] –– **Backend**, built with node.js & express.js. Backend code is located in another repo: https://github.com/haraldsDev/face-rec-backend
+[✅] –– **Backend**, built with node.js & express.js. Backend code is in another repo: https://github.com/haraldsDev/face-rec-backend
 
 [✅] –– **Database**, in postgresQL
 
