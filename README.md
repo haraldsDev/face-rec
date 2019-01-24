@@ -1,6 +1,6 @@
 ## Face Recognition App – Frontend
 
-Face App – an app which recognizes Faces in pictures, and highlights Faces with a frame.  It uses Clarifai API for face recognition.
+Face App – recognizes Faces in pictures, and highlights Faces with a frame. Uses Clarifai API for face recognition.
 
 [✅] –– **Frontend**, built with React.
 
