@@ -1,6 +1,6 @@
 ## Face Recognition App – Frontend
 
-Face App – recognizes Faces in pictures, and highlights Faces with a frame. Uses Clarifai API for face recognition.
+Face App – recognizes Faces in pictures, and highlights Faces with a frame. Uses Clarifai API for face recognition. Website: https://smart-young.herokuapp.com/
 
   [✅] –– **Frontend**, built with React.
 
